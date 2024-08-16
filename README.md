@@ -1,7 +1,7 @@
 # AccessiblePreview
 
 [![Swift Version](https://img.shields.io/badge/Swift-5.10-orange.svg)](https://swift.org)
-[![Platform](https://img.shields.io/badge/Platform-iOS%2016.0%2B%20%7C%20macOS%2012.0%2B-lightgrey.svg)](https://developer.apple.com/documentation/xcode/creating_a_mac_app)
+[![Platform](https://img.shields.io/badge/Platform-iOS%2016.0%2B%20%7C%20macOS%2010.15%2B-lightgrey.svg)](https://developer.apple.com/documentation/xcode/creating_a_mac_app)
 [![License](https://img.shields.io/github/license/samuelbrasileiro/AccessiblePreview)](https://github.com/samuelbrasileiro/AccessiblePreview/blob/main/LICENSE)
 
 `AccessiblePreview` is a Swift package designed to streamline the process of creating accessibility-friendly interfaces in SwiftUI. By leveraging this package, developers can easily generate previews that simulate various accessibility settings directly within Xcode, ensuring their applications are inclusive and accessible to all users.
