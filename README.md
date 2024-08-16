@@ -39,6 +39,14 @@ dependencies: [
 ]
 ```
 
+### Enabling the Macro
+
+After installing AccessiblePreview, you will need to enable the macro in Xcode before you can use it in your project. When you first use the macro, Xcode will prompt you to enable it. The dialog will look like this:
+
+<img width="260" alt="image" src="https://github.com/user-attachments/assets/ff155034-d248-4132-ae2e-8730eaf5ab2d">
+
+Simply click on ***Trust & Enable*** to allow the macro to function. Please ensure you trust the source of the macro before enabling it, as macros can execute code that may affect your system.
+
 ## Getting Started
 
 `AccessiblePreview` provides a straightforward way to simulate various accessibility settings in your SwiftUI previews. This enables you to catch potential issues early in the development process.
