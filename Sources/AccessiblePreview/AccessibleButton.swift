@@ -20,12 +20,11 @@ public struct _AccessibleButton: PrimitiveButtonStyle {
         Button(action: {
             if isOverBounds {
                 print(
-                    "O botão não segue requisitos de acessibilidade: Ele possui \(Int(self.sheetContentSize?.width ?? 0)) de largura e \(Int(self.sheetContentSize?.height ?? 0)) de altura. Use largura e altura mínimos de 44px."
+                    "The button does not meet accessibility requirements: It has a width of \(Int(self.sheetContentSize?.width ?? 0)) and a height of \(Int(self.sheetContentSize?.height ?? 0)). Use a minimum width and height of 44px."
                 )
-            }
-            else {
+            } else {
                 print(
-                    "O botão respeita o tamanho mínimo! Ele possui \(Int(self.sheetContentSize?.width ?? 0)) de largura e \(Int(self.sheetContentSize?.height ?? 0)) de altura."
+                    "The button meets the minimum size requirements! It has a width of \(Int(self.sheetContentSize?.width ?? 0)) and a height of \(Int(self.sheetContentSize?.height ?? 0))."
                 )
             }
             configuration.trigger()
@@ -50,12 +49,14 @@ public struct _AccessibleButton: PrimitiveButtonStyle {
                         .foregroundColor(isHeightOverBounds ? .red : .green)
                         .background(.black)
                         .offset(x: 20)
+                        .accessibilityHidden(true)
                 }
                 Text("\(Int(sheetContentSize?.width ?? 0)) px")
                     .font(.caption)
                     .foregroundColor(isWidthOverBounds ? .red : .green)
                     .background(.black)
                     .offset(y: -8)
+                    .accessibilityHidden(true)
             }
         }
     }
