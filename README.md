@@ -30,6 +30,8 @@ To add `AccessiblePreview` to your project:
 1. In Xcode, navigate to `File > Swift Packages > Add Package Dependency`.
 2. Enter the repository URL: `https://github.com/samuelbrasileiro/AccessiblePreview.git`.
 3. Select the version you need, then integrate the package into your project.
+4. Go to App's target and make sure `AccessiblePreview` is added in `Frameworks, Libraries, and Embedded Content` 
+![target](https://github.com/user-attachments/assets/6c1abfd6-1112-40c3-8e3e-bf75b6a087c5)
 
 Alternatively, add the following line to your `Package.swift`:
 
